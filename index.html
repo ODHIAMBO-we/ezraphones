@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZRA PHONES & REPAIRS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes scrollText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .scrolling-ad {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scrollText 12s linear infinite;
+        }
+    </style>
+</head>
+<!-- TOP HEADER & ADVERTISEMENT -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 pt-6 pb-4">
+        
+        <!-- 1. THE ADVERTISEMENT PART -->
+        <!-- overflow-hidden keeps the scrolling text from breaking the page -->
+        <div class="w-full overflow-hidden text-center mb-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight scrolling-ad">
+              <span class="text-green-600"> OUR TRUSTED PHONES</span> <span class="text-red-600">& Expert Repairs</span>
+            </h1>
+        </div>
+
+        <!-- 2. THE NAVIGATION LINKS (Below the Ad) -->
+        <!-- flex justify-center forces them to the middle of the screen -->
+        <div class="flex justify-center space-x-8 font-bold text-lg text-gray-600">
+            <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+            <a href="index.html#shop" class="hover:text-blue-600 transition">Shop Phones</a>
+            <a href="repairs.html" class="hover:text-blue-600 transition">Repairs & Parts</a>
+        </div>
+
+    </header>
+
+    <section id="home" class="min-h-[80vh] flex flex-col items-center justify-center p-6 text-center">
+        <div class="max-w-3xl space-y-8">
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">
+                EZRA PHONES ACCESSORIES<span class="text-blue-600"> & Expert Repairs</span>
+            </h1>
+            <p class="text-lg text-gray-600">
+                Your one-stop shop for the smartphones, premium accessories, and fast, reliable screen and battery replacements.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#shop" class="w-full sm:w-auto px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition">
+                    Shop Products
+                </a>
+                <a href="#repairs" class="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+                    Book a Repair
+                </a>
+            </div>
+        </div>
+ <!-- PRODUCTS SECTION (SHOP) -->
+    <section id="shop" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-extrabold mb-10 border-b pb-4">Our Products & Services</h2>
+            
+            <!-- THE GRID CONTAINER: This keeps everything side by side -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                
+                <!-- PRODUCT 1 (Oppo) -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 p-4 md:p-6 flex flex-col hover:shadow-lg transition">
+                    <div class="w-full h-40 md:h-48 bg-white border border-gray-100 rounded-lg mb-4 flex items-center justify-center p-4">
+                        <img src="download (1).jpg" alt="Phones" lass="max-h-full max-w-full object-contain mix-blend-multiply">
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Smartphones</span>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">PHONES</h3>
+                    <p class="text-xl md:text-2xl font-extrabold text-gray-900 mt-auto mb-4">FROM KSH 5000</p>
+                    <button onclick="contactSeller('Phones')" class="w-full bg-black text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                        Inquire
+                    </button>
+                </div>
+
+                <!-- PRODUCT 2 (Charger) -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 p-4 md:p-6 flex flex-col hover:shadow-lg transition">
+                    <div class="w-full h-40 md:h-48 bg-white border border-gray-100 rounded-lg mb-4 flex items-center justify-center p-4">
+                        <img src="download.jpg" alt="Fast Charger" class="max-h-full max-w-full object-contain mix-blend-multiply">
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Accessories</span>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Fast ChargerS</h3>
+                    <p class="text-xl md:text-2xl font-extrabold text-gray-900 mt-auto mb-4">FROM KSH 500</p>
+                    <button onclick="contactSeller('Fast ChargerS')" class="w-full bg-black text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                        Inquire
+                    </button>
+                </div>
+
+              <!-- PRODUCT 4 (Screen Protectors) -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 p-4 md:p-6 flex flex-col hover:shadow-lg transition">
+                    <div class="w-full h-40 md:h-48 bg-white border border-gray-100 rounded-lg mb-4 flex items-center justify-center p-4">
+                        <img src="download (3).jpg" alt="Screen Protector" class="max-h-full max-w-full object-contain mix-blend-multiply">
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Accessories</span>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Screen Protectors</h3>
+                    <p class="text-xl md:text-2xl font-extrabold text-gray-900 mt-auto mb-4">FROM KSH 300</p>
+                    <button onclick="contactSeller('Screen Protectors')" class="w-full bg-black text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                        Inquire
+                    </button>
+                </div>
+
+                <!-- PRODUCT 5 (Phone Covers) -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 p-4 md:p-6 flex flex-col hover:shadow-lg transition">
+                    <div class="w-full h-40 md:h-48 bg-white border border-gray-100 rounded-lg mb-4 flex items-center justify-center p-4">
+                        <img src="download (6).jpg" alt="Phone Covers" class="max-h-full max-w-full object-contain mix-blend-multiply">
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Accessories</span>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Phone Covers</h3>
+                    <p class="text-xl md:text-2xl font-extrabold text-gray-900 mt-auto mb-4">FROM KSH 500</p>
+                    <button onclick="contactSeller('Phone Covers')" class="w-full bg-black text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                        Inquire
+                    </button>
+                </div>
+
+                <!-- PRODUCT 6 (Earphones) -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 p-4 md:p-6 flex flex-col hover:shadow-lg transition">
+                    <div class="w-full h-40 md:h-48 bg-white border border-gray-100 rounded-lg mb-4 flex items-center justify-center p-4">
+                        <img src="download (5).jpg" alt="Earphones" class="max-h-full max-w-full object-contain mix-blend-multiply">
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Audio</span>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Earphones</h3>
+                    <p class="text-xl md:text-2xl font-extrabold text-gray-900 mt-auto mb-4">FROM KSH 400</p>
+                    <button onclick="contactSeller('Earphones')" class="w-full bg-black text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                        Inquire
+                    </button>
+                </div>
+
+           <div class="bg-gray-50 rounded-xl border border-gray-200 p-4 md:p-6 flex flex-col hover:shadow-lg transition">
+                    <div class="w-full h-40 md:h-48 bg-white border border-gray-100 rounded-lg mb-4 flex items-center justify-center p-4">
+                        <img src="download (7).jpg" alt="Charging & Data Cables" class="max-h-full max-w-full object-contain mix-blend-multiply">
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Accessories</span>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Charging & Data Cables (Type-C / Lightning)</h3>
+                    <p class="text-xl md:text-2xl font-extrabold text-gray-900 mt-auto mb-4">FROM KSH 300</p>
+                    <button onclick="contactSeller('Charging & Data Cables')" class="w-full bg-black text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                        Inquire
+                    </button>
+                </div>
+            </div>
+            <!-- END OF GRID CONTAINER -->
+            
+        </div>
+    </section>
+
+ <script>
+        // --- YOUR WHATSAPP NUMBER ---
+        // Make sure it has the country code (254) but no plus (+) sign and no leading zero.
+        // Example: If your number is 0712 345 678, you put "254712345678"
+        const myPhoneNumber = "254708826811"; 
+
+        function contactSeller(productName) {
+            // 1. Create the custom message
+            const message = "Hello EZRAPHONES & REPAIR, I am inquiring about the " + productName + ". Is it available?";
+            
+            // 2. Encode it so spaces and symbols work properly in a web link
+            const encodedMessage = encodeURIComponent(message);
+            
+            // 3. Open WhatsApp in a new tab
+            window.open("https://wa.me/" + myPhoneNumber + "?text=" + encodedMessage, "_blank");
+        }
+
+        function bookRepair() {
+            // 1. Create a message specifically for the repair section
+            const message = "Hello EZRAPHONES & REPAIR, I need help with a device repair. Can I get a quote?";
+            
+            const encodedMessage = encodeURIComponent(message);
+            
+            window.open("https://wa.me/" + myPhoneNumber + "?text=" + encodedMessage, "_blank");
+        }
+    </script>
+
+</body>
+</html>
