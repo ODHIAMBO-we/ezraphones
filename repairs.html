@@ -6,64 +6,73 @@
     <title>Repairs & Parts | EZRAPHONES & REPAIR</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-extrabold tracking-tight">EZRAPHONES<span class="text-blue-600">&REPAIR</span></h1>
-            <div class="space-x-6 font-semibold text-gray-600">
-                <a href="index.html" class="hover:text-blue-600 transition">Home</a>
-                <a href="index.html#shop" class="hover:text-blue-600 transition">Shop Phones</a>
-                <a href="repairs.html" class="hover:text-blue-600 transition text-blue-600">Repairs & Parts</a>
-            </div>
-        </div>
-    </nav>
+<body class="bg-gray-900 text-white font-sans scroll-smooth">
 
-    <section class="py-20 bg-white">
+    <!-- DARK HEADER WITHOUT SCROLLING AD -->
+    <header class="bg-black/90 backdrop-blur-md shadow-lg sticky top-0 z-50 pt-6 pb-4 border-b border-gray-800">
+        <div class="w-full text-center mb-4">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white">
+               <span class="text-green-700">EZRA PHONES</span> <span class="text-red-500">& REPAIRS</span>
+            </h1>
+        </div>
+        <div class="flex justify-center space-x-8 font-bold text-lg text-gray-400">
+            <a href="index.html" class="hover:text-blue-500 transition">Home</a>
+            <a href="index.html#shop" class="hover:text-blue-500 transition">Shop Phones</a>
+            <a href="repairs.html" class="hover:text-blue-500 transition text-white">Repairs & Parts</a>
+        </div>
+    </header>
+
+    <!-- SPARE PARTS GRID SECTION -->
+    <section class="py-20 bg-gray-900">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-extrabold mb-10 border-b pb-4">Replacement Parts</h2>
+            <h2 class="text-3xl font-extrabold mb-10 border-b border-gray-700 pb-4 text-white">Replacement Parts</h2>
             
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                 
-                <div class="bg-gray-50 rounded-xl border border-gray-200 p-4 md:p-6 flex flex-col hover:shadow-lg transition">
-                    <div class="w-full h-40 md:h-48 bg-white border border-gray-100 rounded-lg mb-4 flex items-center justify-center p-4">
+                <!-- Screen Replacements -->
+                <div class="bg-gray-800 rounded-xl border border-gray-700 p-4 md:p-6 flex flex-col hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition duration-300">
+                    <div class="w-full h-40 md:h-48 bg-white rounded-lg mb-4 flex items-center justify-center p-4">
                         <img src="download (2).jpg" alt="Screen Replacements" class="max-h-full max-w-full object-contain mix-blend-multiply">
                     </div>
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Parts</span>
-                    <h3 class="text-lg md:text-xl font-bold mb-2">Screen Replacements</h3>
-                    <p class="text-xl md:text-2xl font-extrabold text-gray-900 mt-auto mb-4">FROM KSH 1500</p>
-                    <button onclick="contactSeller('Screen Replacement')" class="w-full bg-black text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-800 transition">Inquire</button>
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1">Parts</span>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-2">Screen Replacements</h3>
+                    <p class="text-xl md:text-2xl font-extrabold text-gray-200 mt-auto mb-4">FROM KSH 1500</p>
+                    <button onclick="contactSeller('Screen Replacement')" class="w-full bg-red-600 text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-blue-500 transition">Inquire</button>
                 </div>
 
-                <div class="bg-gray-50 rounded-xl border border-gray-200 p-4 md:p-6 flex flex-col hover:shadow-lg transition">
-                    <div class="w-full h-40 md:h-48 bg-white border border-gray-100 rounded-lg mb-4 flex items-center justify-center p-4">
+                <!-- Internal Parts -->
+                <div class="bg-gray-800 rounded-xl border border-gray-700 p-4 md:p-6 flex flex-col hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition duration-300">
+                    <div class="w-full h-40 md:h-48 bg-white rounded-lg mb-4 flex items-center justify-center p-4">
                         <img src="download (4).jpg" alt="Internal Parts" class="max-h-full max-w-full object-contain mix-blend-multiply">
                     </div>
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Parts</span>
-                    <h3 class="text-lg md:text-xl font-bold mb-2">Internal Parts & ICs</h3>
-                    <p class="text-xl md:text-2xl font-extrabold text-gray-900 mt-auto mb-4">FROM KSH 1000</p>
-                    <button onclick="contactSeller('Internal Parts')" class="w-full bg-black text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-800 transition">Inquire</button>
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1">Parts</span>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-2">Internal Parts & ICs</h3>
+                    <p class="text-xl md:text-2xl font-extrabold text-gray-200 mt-auto mb-4">FROM KSH 1000</p>
+                    <button onclick="contactSeller('Internal Parts')" class="w-full bg-red-600 text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-blue-500 transition">Inquire</button>
                 </div>
 
-                <div class="bg-gray-50 rounded-xl border border-gray-200 p-4 md:p-6 flex flex-col hover:shadow-lg transition">
-                    <div class="w-full h-40 md:h-48 bg-white border border-gray-100 rounded-lg mb-4 flex items-center justify-center p-4">
+                <!-- Batteries -->
+                <div class="bg-gray-800 rounded-xl border border-gray-700 p-4 md:p-6 flex flex-col hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition duration-300">
+                    <div class="w-full h-40 md:h-48 bg-white rounded-lg mb-4 flex items-center justify-center p-4">
                         <img src="download (8).jpg" alt="Batteries" class="max-h-full max-w-full object-contain mix-blend-multiply">
                     </div>
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Parts</span>
-                    <h3 class="text-lg md:text-xl font-bold mb-2">Replacement Batteries</h3>
-                    <p class="text-xl md:text-2xl font-extrabold text-gray-900 mt-auto mb-4">FROM KSH 1200</p>
-                    <button onclick="contactSeller('Replacement Batteries')" class="w-full bg-black text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-800 transition">Inquire</button>
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1">Parts</span>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-2">Replacement Batteries</h3>
+                    <p class="text-xl md:text-2xl font-extrabold text-gray-200 mt-auto mb-4">FROM KSH 1200</p>
+                    <button onclick="contactSeller('Replacement Batteries')" class="w-full bg-red-600 text-white py-2 md:py-3 rounded-lg font-semibold hover:bg-blue-500 transition">Inquire</button>
                 </div>
 
             </div>
         </div>
     </section>
-    <body class="bg-gray-50 text-gray-900 font-sans scroll-smooth">
 
-    <section class="py-16 bg-blue-50 border-b border-gray-200">
+    <!-- REPAIRS HERO SECTION -->
+    <section class="py-16 bg-gray-800 border-b border-gray-700">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 class="text-4xl font-extrabold mb-6">Expert Device Repair</h2>
-                <p class="text-lg text-gray-700 mb-6">Cracked screen? Dead battery? Water damage? Our certified technician will get your device looking and working like brand new.</p>
-                <ul class="space-y-3 mb-8 font-semibold text-gray-800">
+              <h2 class="text-4xl font-extrabold mb-6 text-green-800">Expert Device Repair</h2>
+                <p class="text-lg text-red-500 mb-6">Cracked screen? Dead battery? Water damage? Our certified technician will get your device looking and working like brand new.</p>
+                <ul class="space-y-3 mb-8 font-semibold text-gray-200">
                     <li class="flex items-center">✅ Screen & LCD Replacements</li>
                     <li class="flex items-center">✅ Battery Swaps</li>
                     <li class="flex items-center">✅ Charging Port Fixes</li>
@@ -71,19 +80,20 @@
                 </ul>
             </div>
             
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 text-center">
-                <h3 class="text-2xl font-bold mb-2">Contact the Technician</h3>
-                <p class="text-gray-500 mb-6">Available Mon - Sat</p>
-                <div class="text-3xl font-extrabold text-blue-600 mb-6">+254 708 826 811</div>
-                <button onclick="bookRepair()" class="w-full bg-green-500 text-white py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition shadow-lg flex items-center justify-center gap-2">
+            <div class="bg-gray-900 p-8 rounded-2xl shadow-xl border border-gray-700 text-center">
+                <h3 class="text-2xl font-bold mb-2 text-white">Contact the Technician</h3>
+                <p class="text-gray-400 mb-6">Available Mon - Sat</p>
+                <div class="text-3xl font-extrabold text-blue-500 mb-6">+254 708 826 811</div>
+                <button onclick="bookRepair()" class="w-full bg-green-500 text-white py-4 rounded-lg font-bold text-lg hover:bg-green-400 transition shadow-[0_0_15px_rgba(34,197,94,0.4)]">
                     Chat on WhatsApp
                 </button>
             </div>
         </div>
     </section>
+
+    <!-- WHATSAPP SCRIPT -->
     <script>
         const myPhoneNumber = "254708826811"; 
-
         function contactSeller(productName) {
             const message = "Hello EZRAPHONES & REPAIR, I am inquiring about the " + productName + " part. Is it available?";
             const encodedMessage = encodeURIComponent(message);
